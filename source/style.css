@@ -3,32 +3,71 @@
 
 body{
     min-width: 400px;
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
     font-family: sans-serif;
-    background-image: linear-gradient(90deg,#05053f, #09CCCC);
+    background-color:  #E6E6E6;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 header{
-    border: 2px solid #05053f, #09CCCC;
+    border: 2px solid #05053f;
     background-image: linear-gradient(45deg, #05053f, #09CCCC);
     border-radius: 5px;
     padding: 10px;
-    height: 100px;   /* altura */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    height: auto;  
     width: 100%;     
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 1500px;
+    background-color: #05053f;
+    padding: 10px 0;
+}
+
+.links p {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links p:hover {
+    color: #E601C8;
+}
 
 main{
     border: 2px solid #ffffff;
     border-radius: 5px 5px 0px 5px;
-    background-color: #ffffff;
+    background-color: white;
+    display: flex;
+    gap: 20px;
     padding: 5px;
+    color: black;
     max-height: 90%;
-    width: 100%;
+    width: 1490px;
+     min-height: 400px;
 }
 .imagens{
     display: inline-block;
+}
+
+article {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #E6E6E6;
+    padding: 10px;
+    border-left: 4px solid #09CCCC;
+    max-width: 300px;
 }
 
 .logo{
@@ -37,10 +76,15 @@ main{
     
 }
 
+.links{
+    display: inline-block;
+    width: 50px;
+}
+
 footer{
     border: 2px solid white;
-    background-color: white;
-    color: #5C09AD;
+    background-color: #05053f;
+    color: white;
     border-radius: 0px 0px 5px 0px;
     text-align: center;
     padding: 5px;
