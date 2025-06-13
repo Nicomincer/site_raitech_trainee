@@ -1,9 +1,49 @@
-@charset 'utf-8';
+@charset "utf-8";
 
-* {
-    font-family: sans-serif;
-}
 
 body{
-    background-image: linear-gradient(90deg, #09CCCC, #E6E6E6);
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    font-family: sans-serif;
+    background-image: linear-gradient(90deg,#05053f, #09CCCC);
+}
+
+header{
+    border: 2px solid #05053f, #09CCCC;
+    background-image: linear-gradient(45deg, #05053f, #09CCCC);
+    border-radius: 5px;
+    padding: 10px;
+    height: 100px;   /* altura */
+    width: 100%;     
+}
+
+
+main{
+    border: 2px solid #ffffff;
+    border-radius: 5px 5px 0px 5px;
+    background-color: #ffffff;
+    padding: 5px;
+    max-height: 90%;
+    width: 100%;
+}
+.imagens{
+    display: inline-block;
+}
+
+.logo{
+    height: 60px;
+    width: auto;
+    
+}
+
+footer{
+    border: 2px solid white;
+    background-color: white;
+    color: #5C09AD;
+    border-radius: 0px 0px 5px 0px;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 10%;
 }
